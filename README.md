@@ -55,9 +55,13 @@ Start with the setup guide, then use the workflow-specific guide you need:
 
 X500 attitude policy tested with PX4 SITL:
 
-<video src="results/x500_attitude.mp4" controls width="720">
-  <a href="results/x500_attitude.mp4">View the X500 attitude policy result</a>
-</video>
+[![X500 attitude policy tested with PX4 SITL](results/x500_attitude.gif)](results/x500_attitude.gif)
+
+Regenerate the GIF from the source MP4 with:
+
+```bash
+scripts/mp4_to_gif.sh results/x500_attitude.mp4 results/x500_attitude.gif
+```
 
 ## TODO
 
