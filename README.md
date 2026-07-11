@@ -25,7 +25,8 @@ The available task set covers position, velocity, and attitude-delta policy
 interfaces.  Each task has its own RL-Games config, smoke test, training script,
 and evaluation path.  The rewards for all tasks were tuned heavily so the
 trained policies remain stable when moved from Isaac Lab evaluation into PX4
-SITL.
+SITL.  A few tasks may still require further reward tuning depending on the
+vehicle model, command envelope, and deployment setup.
 
 Known working versions and tested platform:
 
@@ -49,6 +50,14 @@ Start with the setup guide, then use the workflow-specific guide you need:
   policy through PX4 `v1.14.3`, Micro XRCE-DDS, ROS 2, and Gazebo.
 - [Aerial Isaac Lab notes](docs/aerial_isaac.md): implementation details for
   the Aerial Gym task/controller port and policy observation contract.
+
+## Results
+
+X500 attitude policy tested with PX4 SITL:
+
+<video src="results/x500_attitude.mp4" controls width="720">
+  <a href="results/x500_attitude.mp4">View the X500 attitude policy result</a>
+</video>
 
 ## TODO
 
